@@ -4,10 +4,12 @@ A lidar for Unreal Engine 5 with a free beam pattern (horizontal and vertical
 aperture, beams per axis), measured on the GPU or by line traces, streamed to
 ROS over TCP.
 
-![Lidar point cloud of a crater and rocks while the rover drives](docs/images/lidar.gif)
+![Camera, ground-truth depth and lidar point cloud of a crater and a rock](docs/images/lidar.gif)
 
-*Scans of a crater and two rocks while the rover drives in GNC Moon Simulator
-(rover frame, coloured by height).*
+*The rover driving toward a crater in GNC Moon Simulator: the camera, the
+ground-truth depth, and the lidar scan seen from above and behind the rover.
+Depth and lidar share the colour scale (distance, 2–40 m); the crater is the
+ring the scan lines break around, with the rock in front of it.*
 
 Part of [GNC Moon Simulator](https://github.com/raulcastar/GNC-Moon-Simulator):
 its `component_lidar` node publishes the scans as a `PointCloud2` on
