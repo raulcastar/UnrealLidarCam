@@ -6,13 +6,14 @@ ROS over TCP.
 
 ![Camera, ground-truth depth and lidar point cloud of a crater and a rock](docs/images/lidar.gif)
 
-*The rover driving toward a crater in GNC Moon Simulator: the camera, the
+*The rover driving toward a crater in MARE: the camera, the
 ground-truth depth, and the lidar scan seen from above and behind the rover.
 Depth and lidar share the colour scale (distance, 2–40 m); the crater is the
 ring the scan lines break around, with the rock in front of it.*
 
-Part of [GNC Moon Simulator](https://github.com/raulcastar/GNC-Moon-Simulator):
-its `component_lidar` node publishes the scans as a `PointCloud2` on
+Part of [MARE](https://github.com/raulcastar/MARE-Lunar-Simulator), an open-source lunar rover
+simulation suite. In its ROS 2 stack,
+[GNC-Moon-Simulator](https://github.com/raulcastar/GNC-Moon-Simulator), the `component_lidar` node publishes the scans as a `PointCloud2` on
 `lidar/points` (port 3007).
 
 ## Requirements
@@ -21,8 +22,8 @@ Unreal Engine 5.7 on Windows (the version it is developed and tested with).
 Building from source also needs Visual Studio 2022 with the *Game development
 with C++* workload.
 
-On the ROS side: ROS 2 Jazzy (Ubuntu 24.04), with GNC Moon Simulator's
-`component_lidar` node receiving the stream. The plugin itself has no ROS
+On the ROS side: ROS 2 Jazzy (Ubuntu 24.04), with the
+`component_lidar` node of GNC-Moon-Simulator receiving the stream. The plugin itself has no ROS
 dependency: any program that reads the [wire format](docs/wire-format.md) can use it.
 
 ## Install
