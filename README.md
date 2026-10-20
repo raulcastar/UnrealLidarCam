@@ -1,5 +1,10 @@
 # UnrealLidarCam
 
+[![Part of MARE](https://img.shields.io/badge/Part%20of-MARE-e8a33d)](https://github.com/raulcastar/MARE-Lunar-Simulator)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Unreal Engine 5.7](https://img.shields.io/badge/Unreal%20Engine-5.7-313131?logo=unrealengine&logoColor=white)](https://www.unrealengine.com/)
+[![ROS 2 Jazzy](https://img.shields.io/badge/ROS%202-Jazzy-22314E?logo=ros&logoColor=white)](https://docs.ros.org/en/jazzy/)
+
 A lidar for Unreal Engine 5 with a free beam pattern (horizontal and vertical
 aperture, beams per axis), measured on the GPU or by line traces, streamed to
 ROS over TCP.
